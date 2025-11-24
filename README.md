@@ -25,9 +25,9 @@
 <img src="./img/datamake.png" width="100%" alt="thinking_template" />
 </p>
 
-**Overview of FunReason's data refinement pipeline.** The pipeline consists of five stages: Function Call Classification, Query and Tool Identification, CoT Identification, Function and Parameter Identification, and Format Identification. Each stage ensures specific aspects of data quality, with failing examples either being discarded or regenerated.
+**Overview of BalanceSFT's data refinement pipeline.** The pipeline consists of five stages: Function Call Classification, Query and Tool Identification, CoT Identification, Function and Parameter Identification, and Format Identification. Each stage ensures specific aspects of data quality, with failing examples either being discarded or regenerated.
 
-**We will release all the data that refined in this process, whcih contains 60k high quality CoT data for function call.**
+**We have released all the data that refined in this process, whcih contains high quality CoT data for function call.**
 
 
 <p align="center">
