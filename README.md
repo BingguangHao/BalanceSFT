@@ -22,25 +22,13 @@
 ## BalanceSFT
 
 <p align="center">
-<img src="./img/datamake.png" width="100%" alt="thinking_template" />
+<img src="./img/pipeline.png" width="100%" alt="thinking_template" />
 </p>
 
-**Overview of BalanceSFT's data refinement pipeline.** The pipeline consists of five stages: Function Call Classification, Query and Tool Identification, CoT Identification, Function and Parameter Identification, and Format Identification. Each stage ensures specific aspects of data quality, with failing examples either being discarded or regenerated.
+**Overview of BalanceSFT's data refinement pipeline.**  It starts with a standard function call dataset, which is refined through a Base Quality Check and Answer Check to create initial training data and identify hard data. The model is first initialized via a Cold Start using the Self-adjusted Signal Balancing (SSB) Loss. Subsequently, the Hard Data Re-sampling (HDR) strategy creates a Self-evolving Loop where the model iteratively reasons on hard cases, generates new solutions, and undergoes quality-gated retraining.
 
 **We have released all the data that refined in this process, whcih contains high quality CoT data for function call.**
 
-
-<p align="center">
-<img src="./img/MSL.png" width="100%" alt="thinking_template" />
-</p>
-
-**Self-Refinement Multiscale Loss.** Traditional loss functions often overemphasize the lengthy reasoning process at the expense of function call accuracy. The inherent trade-off between reasoning quality and function call correctness, leading to the development of our balanced approach.
-
-<p align="center">
-<img src="./img/training.png" width="100%" alt="thinking_template" />
-</p>
-
-**Self Refinement Strategy.** Following the MSL training, we employ a Self-Refinement strategy to further enhance the model capabilities. In this phase, the MSL-trained model samples from the original xLAM dataset, generating its own Chain-of-Thought reasoning and corresponding function calls. Subsequently, this self-generated data is fed into the data refinement pipeline for automated inspection and improvement. Only the refined data, having passed the rigorous quality checks of the data refinement, is then used to further update the model's parameters. This iterative process allows the model to learn from its own improved outputs, leading to continuous self-enhancement of its function calling and reasoning abilities.
 
 ## Main Result
 <p align="center">
