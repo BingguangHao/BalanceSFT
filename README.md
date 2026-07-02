@@ -43,10 +43,13 @@
 
 ## Citation
 ```md
-@article{FunReason,
-  title={FunReason: Enhancing Large Language Models' Function Calling via Self-Refinement Multiscale Loss and Automated Data Refinement},
-  author={Bingguang Hao, Maolin Wang, Zengzhuang Xu, Cunyin Peng, Yicheng Chen, Xiangyu Zhao, Jinjie Gu, Chenyi Zhuang},
-  journal={arXiv preprint arXiv:2505.20192},
-  year={2025}
+@inproceedings{hao-etal-2026-balancesft,
+title = "{B}alance{SFT}: Improving {LLM} Function Calling with Balanced Training Signals and Data Hardness",
+author = "Hao, Bingguang  and Xu, Zengzhuang  and Wang, Maolin  and Wen, Yuntao  and Chen, Yicheng  and Peng, Cunyin  and Chen, Long  and Zhao, Xiangyu  and Gu, Jinjie  and Zhuang, Chenyi  andZhang, Ji",
+booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {ACL} 2026",
+year = "2026",
+publisher = "Association for Computational Linguistics",
+pages = "18094--18112",
+ISBN = "979-8-89176-395-1"
 }
 ```
