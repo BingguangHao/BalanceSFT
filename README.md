@@ -5,10 +5,10 @@
 </p>
 
 > [!IMPORTANT]
+>
+> - **Our paper is accepted by ACL 2026.**
 > 
 > - **We have released our training dataset!**
-> 
-> - **We will release the code, waiting the confidential review of Ant Group.**
 > 
 > - **Please give a ⭐️ to follow the update which is also an incentive for us.**
 
